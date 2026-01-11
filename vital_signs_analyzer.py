@@ -22,6 +22,12 @@ HR_SEVERE = 200
 def normalize_hr(hr):
     """
     Normalizes Heart Rate into a 0-1 range.
+
+    Args:
+        hr (float): Heart Rate.
+
+    Returns:
+        float: Normalized Heart Rate.
     """
     if hr < HR_MIN or hr > HR_MAX:
         raise ValueError("Invalid Heart rate range")
@@ -34,6 +40,12 @@ def normalize_hr(hr):
 def normalize_spo2(spo2):
     """
     Normalizes SpO2 into a 0-1 range.
+
+    Args:
+        spo2 (float): Blood Oxygen Saturation.
+
+    Returns:
+        float: Normalized SpO2.
     """
     if spo2 < SPO2_MIN or spo2 > SPO2_MAX:
         raise ValueError("Invalid Spo2 range")
